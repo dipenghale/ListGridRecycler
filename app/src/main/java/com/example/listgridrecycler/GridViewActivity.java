@@ -23,16 +23,13 @@ public class GridViewActivity extends AppCompatActivity  {
         ArrayAdapter adapter = new ArrayAdapter(this, R.layout.list_item_layout, items);
         gridView.setAdapter(adapter);
 
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String selectedId = items[position];
-                Toast.makeText(GridViewActivity.this, "Item " + selectedId + " clicked", Toast.LENGTH_SHORT).show();
-                if(position==0){
-                    Intent intent = new Intent(GridViewActivity.this,MainActivity.class);
-                    startActivity(intent);
+        gridView.setOnItemClickListener((parent, view, position, id) -> {
+            String selectedId = items[position];
+            Toast.makeText(GridViewActivity.this, "Item " + selectedId + " clicked", Toast.LENGTH_SHORT).show();
+            if(position==0){
+                Intent intent = new Intent(GridViewActivity.this,MainActivity.class);
+                startActivity(intent);
 
-                }
             }
         });
     }
