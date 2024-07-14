@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
-    private String[] items = {"Go to Gridview", "Item 2", "Item 3",
+    private String[] items = {"Go to Gridview", "Go to RecyclerView", "Item 3",
             "Item 4","Item 5","Item 6","Item 7","Item 8",
             "Item 9","Item 10","Item 11","Item 12","Item 13"
             ,"Item 14","Item 15","Item 16","Item 17","Item 18","Item 19","Item 20"};
@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, selectedItem + " clicked", Toast.LENGTH_SHORT).show();
             if(position==0){
                 Intent intent = new Intent(MainActivity.this, GridViewActivity.class);
+                startActivity(intent);
+
+            }
+
+            if(position==1){
+                Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                 startActivity(intent);
 
             }
