@@ -11,4 +11,8 @@ class studentData {
     public String getName(){
         return this.name;
     }
+
+    public Integer getAge(){
+        return this.age;
+    }
 }

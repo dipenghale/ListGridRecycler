@@ -66,6 +66,6 @@ public class RecyclerViewActivity extends AppCompatActivity implements StudentAd
     @Override
     public void onItemClick(int position) {
         studentData clickedStudent = studentDataList.get(position);
-        Toast.makeText(this, "Clicked: " + clickedStudent.getName(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Clicked: " + clickedStudent.getName() + " "+clickedStudent.getAge(), Toast.LENGTH_SHORT).show();
     }
 }
