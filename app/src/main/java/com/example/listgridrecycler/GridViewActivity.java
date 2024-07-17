@@ -13,7 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class GridViewActivity extends AppCompatActivity  {
     private GridView gridView;
     // private int[] imageIds = {R.drawable.sample_2, R.drawable.sample_3, R.drawable.sample_4, R.drawable.sample_5, R.drawable.sample_6};
-    private String[] items = {"Go to Listview", "Go to RecyclerView", "Item 3","Item 4","Item 5","Item 6","Item 7","Item 8","Item 9","Item 10","Item 11","Item 12","Item 13","Item 14","Item 15"};
+    private String[] items = {"Go to Listview", "Go to RecyclerView", "Item 3","Item 4",
+            "Item 5","Item 6","Item 7","Item 8","Item 9",
+            "Item 10","Item 11","Item 12","Item 13","Item 14","Item 15"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
